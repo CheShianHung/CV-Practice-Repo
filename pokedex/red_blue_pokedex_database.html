@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://pokemondb.net/pokedex/game/red-blue-yellow -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="dns-prefetch" href="https://img.pokemondb.net/">
+<link rel="dns-prefetch" href="https://code.jquery.com/">
+<title>Pokémon Red/Blue/Yellow Pokédex | Pokémon Database</title>
+<link rel="stylesheet" href="./red_blue_pokedex database_files/pokemondb-62f9129e2e.css">
+<link rel="stylesheet" href="./red_blue_pokedex database_files/pkmn-sprites-cfbd699d5a.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The native Pokédex for Red/Blue/Yellow, listing all Pokémon from the Kanto region.">
+<link rel="canonical" href="https://pokemondb.net/pokedex/game/red-blue-yellow">
+<link rel="shortcut icon" type="image/x-icon" href="https://pokemondb.net/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://pokemondb.net/apple-touch-icon-precomposed.png">
+<link rel="alternate" type="application/rss+xml" href="http://pokemondb.net/news/feed" title="The Pokemon Database newsfeed">
+<script src="./red_blue_pokedex database_files/ca-pub-4942990752504243.js"></script><script async="" src="./red_blue_pokedex database_files/analytics.js"></script><script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-1974891-7', 'auto');
+		ga('send', 'pageview');
+	</script>
+<script async="" src="./red_blue_pokedex database_files/adsbygoogle.js"></script>
+<link rel="preload" href="./red_blue_pokedex database_files/integrator.js" as="script"><script type="text/javascript" src="./red_blue_pokedex database_files/integrator.js"></script><link rel="preload" href="./red_blue_pokedex database_files/integrator(1).js" as="script"><script type="text/javascript" src="./red_blue_pokedex database_files/integrator(1).js"></script></head>
+<body>
+<header class="grid-wrapper">
+<a class="header-logo" href="https://pokemondb.net/">Pokémon Database</a>
+<form method="get" action="https://pokemondb.net/search" class="sitesearch-form">
+<input type="text" name="q" id="sitesearch" autocomplete="off" placeholder="Enter keywords" class="sitesearch-input">
+<button type="submit" class="sitesearch-btn">Search</button>
+<div id="sitesearch-results" class="sitesearch-results"></div>
+</form>
+</header>
+<nav class="main-menu grid-wrapper">
+<ul class="main-menu-list sf-js-enabled">
+<li><a class="sf-with-ul">Pokémon data</a>
+<ul class="main-menu-sub" style="display: none;">
+<li><a href="https://pokemondb.net/pokedex">Pokédex</a>
+</li><li><a href="https://pokemondb.net/move">Moves</a>
+</li><li><a href="https://pokemondb.net/type">Type chart</a>
+</li><li><a href="https://pokemondb.net/ability">Abilities</a>
+</li><li><a href="https://pokemondb.net/item">Items</a>
+</li><li><a href="https://pokemondb.net/evolution">Evolution chains</a>
+</li><li><a href="https://pokemondb.net/location">Pokémon locations</a>
+</li><li><a href="https://pokemondb.net/sprites">Sprite gallery</a>
+</li><li><a href="https://pokemondb.net/pokedex/all">Pokémon stats</a>
+</li></ul>
+</li>
+<li><a class="sf-with-ul">Game mechanics</a>
+<ul class="main-menu-sub" style="display: none;">
+<li><a href="https://pokemondb.net/mechanics/breeding">Breeding &amp; egg groups</a>
+</li><li><a href="https://pokemondb.net/mechanics/move-tutors">Move Tutors</a>
+</li><li><a href="https://pokemondb.net/type/dual">Dual type chart</a>
+</li><li><a href="https://pokemondb.net/ev">Effort Values (EVs)</a>
+</li><li><a href="https://pokemondb.net/mechanics/natures">Natures</a>
+</li><li><a href="https://pokemondb.net/mechanics/hidden">IVs/Personality</a>
+</li><li class="hr-title">Useful tools
+</li><li><a href="https://pokemondb.net/tools/moveset-search">Moveset searcher</a>
+</li><li><a href="https://pokemondb.net/tools/type-coverage">Type coverage checker</a>
+</li></ul>
+</li>
+<li><a class="sf-with-ul">Pokémon games</a>
+<ul class="main-menu-sub" style="display: none;">
+<li><a href="https://pokemondb.net/ultra-sun-ultra-moon">Ultra Sun &amp; Ultra Moon</a>
+</li><li><a href="https://pokemondb.net/sun-moon">Sun &amp; Moon</a>
+</li><li class="hr">
+</li><li><a href="https://pokemondb.net/omega-ruby-alpha-sapphire">Omega Ruby &amp; Alpha Sapphire</a>
+</li><li><a href="https://pokemondb.net/x-y">X &amp; Y</a>
+</li><li class="hr">
+</li><li><a href="https://pokemondb.net/black-white-2">Black 2 &amp; White 2</a>
+</li><li><a href="https://pokemondb.net/black-white">Black &amp; White</a>
+</li><li class="hr">
+</li><li><a href="https://pokemondb.net/heartgold-soulsilver">HeartGold &amp; SoulSilver</a>
+</li><li><a href="https://pokemondb.net/platinum">Platinum</a>
+</li><li><a href="https://pokemondb.net/diamond-pearl">Diamond &amp; Pearl</a>
+</li><li class="hr">
+</li><li><a href="https://pokemondb.net/emerald">Emerald</a>
+</li><li><a href="https://pokemondb.net/firered-leafgreen">FireRed &amp; LeafGreen</a>
+</li><li><a href="https://pokemondb.net/ruby-sapphire">Ruby &amp; Sapphire</a>
+</li><li class="hr">
+</li><li><a href="https://pokemondb.net/crystal">Crystal</a>
+</li><li><a href="https://pokemondb.net/gold-silver">Gold &amp; Silver</a>
+</li><li class="hr">
+</li><li><a href="https://pokemondb.net/yellow">Yellow</a>
+</li><li><a href="https://pokemondb.net/red-blue">Red &amp; Blue</a>
+</li><li class="hr">
+</li><li><a href="https://pokemondb.net/spinoff/shuffle">Pokémon Shuffle</a>
+</li><li><a href="https://pokemondb.net/spinoff/go/pokedex">Pokémon GO</a>
+</li><li><a href="https://pokemondb.net/spinoff">Other spin-offs</a>
+</li></ul>
+</li>
+<li><a class="sf-with-ul">Community</a>
+<ul class="main-menu-sub" style="display: none;">
+<li><a href="https://pokemondb.net/pokebase/">Pokémon Q&amp;A</a>
+</li><li><a href="https://pokemondb.net/pokebase/rmt">Pokémon Rate My Team</a>
+</li><li><a href="https://pokemondb.net/pokebase/chat">Chat Room</a>
+</li><li><a href="https://pokemondb.net/pokebase/meta/">Meta (Suggestion Box)</a>
+</li></ul>
+</li>
+<li><a class="sf-with-ul">Other information</a>
+<ul class="main-menu-sub" style="display: none;">
+<li><a href="https://pokemondb.net/">Pokémon News (home page)</a>
+</li><li><a href="https://pokemondb.net/maps">Maps/Puzzles</a>
+</li><li><a href="https://pokemondb.net/events">Pokémon events &amp; passwords</a>
+</li><li><a href="https://pokemondb.net/etymology">Pokémon name origins</a>
+</li><li><a href="https://pokemondb.net/glossary">Pokémon dictionary</a>
+</li><li><a href="https://pokemondb.net/about">About/Contact us</a>
+</li><li class="hr-title">Quick links
+</li><li><a href="https://pokemondb.net/pokedex/national">Full Pokémon list</a>
+</li><li><a href="https://pokemondb.net/pokedex/game/omega-ruby-alpha-sapphire">Omega Ruby &amp; Alpha Sapphire Pokédex</a>
+</li><li><a href="https://pokemondb.net/pokedex/game/sun-moon">Sun &amp; Moon Pokédex</a>
+</li></ul>
+</li>
+</ul>
+</nav>
+<article class="main-content grid-wrapper">
+<style>
+.game-red-blue .pkgG1 {
+	width: 56px;
+	height: 56px;
+	background-image: url("https://img.pokemondb.net/sprites/red-blue/montage.png");
+}
+.pkgG1.n1 { background-position: 0px 0px }
+.pkgG1.n2 { background-position: -56px 0px }
+.pkgG1.n3 { background-position: -112px 0px }
+.pkgG1.n4 { background-position: -168px 0px }
+.pkgG1.n5 { background-position: -224px 0px }
+.pkgG1.n6 { background-position: -280px 0px }
+.pkgG1.n7 { background-position: -336px 0px }
+.pkgG1.n8 { background-position: -392px 0px }
+.pkgG1.n9 { background-position: -448px 0px }
+.pkgG1.n10 { background-position: -504px 0px }
+.pkgG1.n11 { background-position: -560px 0px }
+.pkgG1.n12 { background-position: -616px 0px }
+.pkgG1.n13 { background-position: 0px -56px }
+.pkgG1.n14 { background-position: -56px -56px }
+.pkgG1.n15 { background-position: -112px -56px }
+.pkgG1.n16 { background-position: -168px -56px }
+.pkgG1.n17 { background-position: -224px -56px }
+.pkgG1.n18 { background-position: -280px -56px }
+.pkgG1.n19 { background-position: -336px -56px }
+.pkgG1.n20 { background-position: -392px -56px }
+.pkgG1.n21 { background-position: -448px -56px }
+.pkgG1.n22 { background-position: -504px -56px }
+.pkgG1.n23 { background-position: -560px -56px }
+.pkgG1.n24 { background-position: -616px -56px }
+.pkgG1.n25 { background-position: 0px -112px }
+.pkgG1.n26 { background-position: -56px -112px }
+.pkgG1.n27 { background-position: -112px -112px }
+.pkgG1.n28 { background-position: -168px -112px }
+.pkgG1.n29 { background-position: -224px -112px }
+.pkgG1.n30 { background-position: -280px -112px }
+.pkgG1.n31 { background-position: -336px -112px }
+.pkgG1.n32 { background-position: -392px -112px }
+.pkgG1.n33 { background-position: -448px -112px }
+.pkgG1.n34 { background-position: -504px -112px }
+.pkgG1.n35 { background-position: -560px -112px }
+.pkgG1.n36 { background-position: -616px -112px }
+.pkgG1.n37 { background-position: 0px -168px }
+.pkgG1.n38 { background-position: -56px -168px }
+.pkgG1.n39 { background-position: -112px -168px }
+.pkgG1.n40 { background-position: -168px -168px }
+.pkgG1.n41 { background-position: -224px -168px }
+.pkgG1.n42 { background-position: -280px -168px }
+.pkgG1.n43 { background-position: -336px -168px }
+.pkgG1.n44 { background-position: -392px -168px }
+.pkgG1.n45 { background-position: -448px -168px }
+.pkgG1.n46 { background-position: -504px -168px }
+.pkgG1.n47 { background-position: -560px -168px }
+.pkgG1.n48 { background-position: -616px -168px }
+.pkgG1.n49 { background-position: 0px -224px }
+.pkgG1.n50 { background-position: -56px -224px }
+.pkgG1.n51 { background-position: -112px -224px }
+.pkgG1.n52 { background-position: -168px -224px }
+.pkgG1.n53 { background-position: -224px -224px }
+.pkgG1.n54 { background-position: -280px -224px }
+.pkgG1.n55 { background-position: -336px -224px }
+.pkgG1.n56 { background-position: -392px -224px }
+.pkgG1.n57 { background-position: -448px -224px }
+.pkgG1.n58 { background-position: -504px -224px }
+.pkgG1.n59 { background-position: -560px -224px }
+.pkgG1.n60 { background-position: -616px -224px }
+.pkgG1.n61 { background-position: 0px -280px }
+.pkgG1.n62 { background-position: -56px -280px }
+.pkgG1.n63 { background-position: -112px -280px }
+.pkgG1.n64 { background-position: -168px -280px }
+.pkgG1.n65 { background-position: -224px -280px }
+.pkgG1.n66 { background-position: -280px -280px }
+.pkgG1.n67 { background-position: -336px -280px }
+.pkgG1.n68 { background-position: -392px -280px }
+.pkgG1.n69 { background-position: -448px -280px }
+.pkgG1.n70 { background-position: -504px -280px }
+.pkgG1.n71 { background-position: -560px -280px }
+.pkgG1.n72 { background-position: -616px -280px }
+.pkgG1.n73 { background-position: 0px -336px }
+.pkgG1.n74 { background-position: -56px -336px }
+.pkgG1.n75 { background-position: -112px -336px }
+.pkgG1.n76 { background-position: -168px -336px }
+.pkgG1.n77 { background-position: -224px -336px }
+.pkgG1.n78 { background-position: -280px -336px }
+.pkgG1.n79 { background-position: -336px -336px }
+.pkgG1.n80 { background-position: -392px -336px }
+.pkgG1.n81 { background-position: -448px -336px }
+.pkgG1.n82 { background-position: -504px -336px }
+.pkgG1.n83 { background-position: -560px -336px }
+.pkgG1.n84 { background-position: -616px -336px }
+.pkgG1.n85 { background-position: 0px -392px }
+.pkgG1.n86 { background-position: -56px -392px }
+.pkgG1.n87 { background-position: -112px -392px }
+.pkgG1.n88 { background-position: -168px -392px }
+.pkgG1.n89 { background-position: -224px -392px }
+.pkgG1.n90 { background-position: -280px -392px }
+.pkgG1.n91 { background-position: -336px -392px }
+.pkgG1.n92 { background-position: -392px -392px }
+.pkgG1.n93 { background-position: -448px -392px }
+.pkgG1.n94 { background-position: -504px -392px }
+.pkgG1.n95 { background-position: -560px -392px }
+.pkgG1.n96 { background-position: -616px -392px }
+.pkgG1.n97 { background-position: 0px -448px }
+.pkgG1.n98 { background-position: -56px -448px }
+.pkgG1.n99 { background-position: -112px -448px }
+.pkgG1.n100 { background-position: -168px -448px }
+.pkgG1.n101 { background-position: -224px -448px }
+.pkgG1.n102 { background-position: -280px -448px }
+.pkgG1.n103 { background-position: -336px -448px }
+.pkgG1.n104 { background-position: -392px -448px }
+.pkgG1.n105 { background-position: -448px -448px }
+.pkgG1.n106 { background-position: -504px -448px }
+.pkgG1.n107 { background-position: -560px -448px }
+.pkgG1.n108 { background-position: -616px -448px }
+.pkgG1.n109 { background-position: 0px -504px }
+.pkgG1.n110 { background-position: -56px -504px }
+.pkgG1.n111 { background-position: -112px -504px }
+.pkgG1.n112 { background-position: -168px -504px }
+.pkgG1.n113 { background-position: -224px -504px }
+.pkgG1.n114 { background-position: -280px -504px }
+.pkgG1.n115 { background-position: -336px -504px }
+.pkgG1.n116 { background-position: -392px -504px }
+.pkgG1.n117 { background-position: -448px -504px }
+.pkgG1.n118 { background-position: -504px -504px }
+.pkgG1.n119 { background-position: -560px -504px }
+.pkgG1.n120 { background-position: -616px -504px }
+.pkgG1.n121 { background-position: 0px -560px }
+.pkgG1.n122 { background-position: -56px -560px }
+.pkgG1.n123 { background-position: -112px -560px }
+.pkgG1.n124 { background-position: -168px -560px }
+.pkgG1.n125 { background-position: -224px -560px }
+.pkgG1.n126 { background-position: -280px -560px }
+.pkgG1.n127 { background-position: -336px -560px }
+.pkgG1.n128 { background-position: -392px -560px }
+.pkgG1.n129 { background-position: -448px -560px }
+.pkgG1.n130 { background-position: -504px -560px }
+.pkgG1.n131 { background-position: -560px -560px }
+.pkgG1.n132 { background-position: -616px -560px }
+.pkgG1.n133 { background-position: 0px -616px }
+.pkgG1.n134 { background-position: -56px -616px }
+.pkgG1.n135 { background-position: -112px -616px }
+.pkgG1.n136 { background-position: -168px -616px }
+.pkgG1.n137 { background-position: -224px -616px }
+.pkgG1.n138 { background-position: -280px -616px }
+.pkgG1.n139 { background-position: -336px -616px }
+.pkgG1.n140 { background-position: -392px -616px }
+.pkgG1.n141 { background-position: -448px -616px }
+.pkgG1.n142 { background-position: -504px -616px }
+.pkgG1.n143 { background-position: -560px -616px }
+.pkgG1.n144 { background-position: -616px -616px }
+.pkgG1.n145 { background-position: 0px -672px }
+.pkgG1.n146 { background-position: -56px -672px }
+.pkgG1.n147 { background-position: -112px -672px }
+.pkgG1.n148 { background-position: -168px -672px }
+.pkgG1.n149 { background-position: -224px -672px }
+.pkgG1.n150 { background-position: -280px -672px }
+.pkgG1.n151 { background-position: -336px -672px }
+</style>
+<h1>Red, Blue, Yellow Pokédex</h1>
+<div class="intro">
+<p>The original games <strong>Pokémon Red, Pokémon Blue &amp; Pokémon Yellow</strong> have a Pokédex of 151 Pokémon in the Kanto region.</p>
+<p>They're shown below with the sprites from those games.</p>
+<div class="share-icons"><i class="share-blurb">Share this page:</i> <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fpokemondb.net%2Fpokedex%2Fgame%2Fred-blue-yellow&amp;t=Pok%C3%A9mon+Red%2FBlue%2FYellow+Pok%C3%A9dex" target="_blank" title="Share on Facebook"><img class="icon-share lazyload" src="./red_blue_pokedex database_files/facebook.png" data-original="https://img.pokemondb.net/images/social/facebook.png" alt="Facebook"></a> <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpokemondb.net%2Fpokedex%2Fgame%2Fred-blue-yellow&amp;text=Pok%C3%A9mon+Red%2FBlue%2FYellow+Pok%C3%A9dex+%28via+%40pokemondb%29+" target="_blank" title="Tweet this page"><img class="icon-share lazyload" src="./red_blue_pokedex database_files/twitter.png" data-original="https://img.pokemondb.net/images/social/twitter.png" alt="Twitter"></a> <a href="https://plus.google.com/share?url=https%3A%2F%2Fpokemondb.net%2Fpokedex%2Fgame%2Fred-blue-yellow" target="_blank" title="Share on Google+"><img class="icon-share lazyload" src="./red_blue_pokedex database_files/google-plus.png" data-original="https://img.pokemondb.net/images/social/google-plus.png" alt="Google+"></a> <a href="mailto:?subject=Pokemon+link&amp;body=Check+out+this+cool+Pokemon+page%21%0A%0APok%C3%A9mon+Red%2FBlue%2FYellow+Pok%C3%A9dex%0Ahttps%3A%2F%2Fpokemondb.net%2Fpokedex%2Fgame%2Fred-blue-yellow" target="_blank" title="Email this page"><img class="icon-share lazyload" src="./red_blue_pokedex database_files/message.png" data-original="https://img.pokemondb.net/images/social/message.png" alt="Email"></a> </div></div>
+<div class="ad-responsive">
+<style>.adresp-leaderboard { max-width: 730px; margin: auto; }</style>
+<ins class="adsbygoogle adresp-leaderboard" style="display: block; height: 90px;" data-ad-client="ca-pub-4942990752504243" data-ad-slot="5568695004" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:730px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:730px;background-color:transparent;"><iframe width="730" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:730px;height:90px;" src="./red_blue_pokedex database_files/saved_resource.html"></iframe></ins></ins></ins>
+<script data-cfasync="false" src="./red_blue_pokedex database_files/email-decode.min.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class="infocard-tall-list">
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n1" data-sprite=" pkgG1 n1 " href="https://pokemondb.net/pokedex/bulbasaur"></a><br><small>#001</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/bulbasaur">Bulbasaur</a><br><small class="aside"><a href="https://pokemondb.net/type/grass" class="itype grass">Grass</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n2" data-sprite=" pkgG1 n2 " href="https://pokemondb.net/pokedex/ivysaur"></a><br><small>#002</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/ivysaur">Ivysaur</a><br><small class="aside"><a href="https://pokemondb.net/type/grass" class="itype grass">Grass</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n3" data-sprite=" pkgG1 n3 " href="https://pokemondb.net/pokedex/venusaur"></a><br><small>#003</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/venusaur">Venusaur</a><br><small class="aside"><a href="https://pokemondb.net/type/grass" class="itype grass">Grass</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n4" data-sprite=" pkgG1 n4 " href="https://pokemondb.net/pokedex/charmander"></a><br><small>#004</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/charmander">Charmander</a><br><small class="aside"><a href="https://pokemondb.net/type/fire" class="itype fire">Fire</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n5" data-sprite=" pkgG1 n5 " href="https://pokemondb.net/pokedex/charmeleon"></a><br><small>#005</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/charmeleon">Charmeleon</a><br><small class="aside"><a href="https://pokemondb.net/type/fire" class="itype fire">Fire</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n6" data-sprite=" pkgG1 n6 " href="https://pokemondb.net/pokedex/charizard"></a><br><small>#006</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/charizard">Charizard</a><br><small class="aside"><a href="https://pokemondb.net/type/fire" class="itype fire">Fire</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n7" data-sprite=" pkgG1 n7 " href="https://pokemondb.net/pokedex/squirtle"></a><br><small>#007</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/squirtle">Squirtle</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n8" data-sprite=" pkgG1 n8 " href="https://pokemondb.net/pokedex/wartortle"></a><br><small>#008</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/wartortle">Wartortle</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n9" data-sprite=" pkgG1 n9 " href="https://pokemondb.net/pokedex/blastoise"></a><br><small>#009</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/blastoise">Blastoise</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n10" data-sprite=" pkgG1 n10 " href="https://pokemondb.net/pokedex/caterpie"></a><br><small>#010</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/caterpie">Caterpie</a><br><small class="aside"><a href="https://pokemondb.net/type/bug" class="itype bug">Bug</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n11" data-sprite=" pkgG1 n11 " href="https://pokemondb.net/pokedex/metapod"></a><br><small>#011</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/metapod">Metapod</a><br><small class="aside"><a href="https://pokemondb.net/type/bug" class="itype bug">Bug</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n12" data-sprite=" pkgG1 n12 " href="https://pokemondb.net/pokedex/butterfree"></a><br><small>#012</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/butterfree">Butterfree</a><br><small class="aside"><a href="https://pokemondb.net/type/bug" class="itype bug">Bug</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n13" data-sprite=" pkgG1 n13 " href="https://pokemondb.net/pokedex/weedle"></a><br><small>#013</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/weedle">Weedle</a><br><small class="aside"><a href="https://pokemondb.net/type/bug" class="itype bug">Bug</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n14" data-sprite=" pkgG1 n14 " href="https://pokemondb.net/pokedex/kakuna"></a><br><small>#014</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/kakuna">Kakuna</a><br><small class="aside"><a href="https://pokemondb.net/type/bug" class="itype bug">Bug</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n15" data-sprite=" pkgG1 n15 " href="https://pokemondb.net/pokedex/beedrill"></a><br><small>#015</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/beedrill">Beedrill</a><br><small class="aside"><a href="https://pokemondb.net/type/bug" class="itype bug">Bug</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n16" data-sprite=" pkgG1 n16 " href="https://pokemondb.net/pokedex/pidgey"></a><br><small>#016</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/pidgey">Pidgey</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n17" data-sprite=" pkgG1 n17 " href="https://pokemondb.net/pokedex/pidgeotto"></a><br><small>#017</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/pidgeotto">Pidgeotto</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n18" data-sprite=" pkgG1 n18 " href="https://pokemondb.net/pokedex/pidgeot"></a><br><small>#018</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/pidgeot">Pidgeot</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n19" data-sprite=" pkgG1 n19 " href="https://pokemondb.net/pokedex/rattata"></a><br><small>#019</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/rattata">Rattata</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n20" data-sprite=" pkgG1 n20 " href="https://pokemondb.net/pokedex/raticate"></a><br><small>#020</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/raticate">Raticate</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n21" data-sprite=" pkgG1 n21 " href="https://pokemondb.net/pokedex/spearow"></a><br><small>#021</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/spearow">Spearow</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n22" data-sprite=" pkgG1 n22 " href="https://pokemondb.net/pokedex/fearow"></a><br><small>#022</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/fearow">Fearow</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n23" data-sprite=" pkgG1 n23 " href="https://pokemondb.net/pokedex/ekans"></a><br><small>#023</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/ekans">Ekans</a><br><small class="aside"><a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n24" data-sprite=" pkgG1 n24 " href="https://pokemondb.net/pokedex/arbok"></a><br><small>#024</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/arbok">Arbok</a><br><small class="aside"><a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n25" data-sprite=" pkgG1 n25 " href="https://pokemondb.net/pokedex/pikachu"></a><br><small>#025</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/pikachu">Pikachu</a><br><small class="aside"><a href="https://pokemondb.net/type/electric" class="itype electric">Electric</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n26" data-sprite=" pkgG1 n26 " href="https://pokemondb.net/pokedex/raichu"></a><br><small>#026</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/raichu">Raichu</a><br><small class="aside"><a href="https://pokemondb.net/type/electric" class="itype electric">Electric</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n27" data-sprite=" pkgG1 n27 " href="https://pokemondb.net/pokedex/sandshrew"></a><br><small>#027</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/sandshrew">Sandshrew</a><br><small class="aside"><a href="https://pokemondb.net/type/ground" class="itype ground">Ground</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n28" data-sprite=" pkgG1 n28 " href="https://pokemondb.net/pokedex/sandslash"></a><br><small>#028</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/sandslash">Sandslash</a><br><small class="aside"><a href="https://pokemondb.net/type/ground" class="itype ground">Ground</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n29" data-sprite=" pkgG1 n29 " href="https://pokemondb.net/pokedex/nidoran-f"></a><br><small>#029</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/nidoran-f">Nidoran♀</a><br><small class="aside"><a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n30" data-sprite=" pkgG1 n30 " href="https://pokemondb.net/pokedex/nidorina"></a><br><small>#030</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/nidorina">Nidorina</a><br><small class="aside"><a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n31" data-sprite=" pkgG1 n31 " href="https://pokemondb.net/pokedex/nidoqueen"></a><br><small>#031</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/nidoqueen">Nidoqueen</a><br><small class="aside"><a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a> · <a href="https://pokemondb.net/type/ground" class="itype ground">Ground</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n32" data-sprite=" pkgG1 n32 " href="https://pokemondb.net/pokedex/nidoran-m"></a><br><small>#032</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/nidoran-m">Nidoran♂</a><br><small class="aside"><a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n33" data-sprite=" pkgG1 n33 " href="https://pokemondb.net/pokedex/nidorino"></a><br><small>#033</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/nidorino">Nidorino</a><br><small class="aside"><a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n34" data-sprite=" pkgG1 n34 " href="https://pokemondb.net/pokedex/nidoking"></a><br><small>#034</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/nidoking">Nidoking</a><br><small class="aside"><a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a> · <a href="https://pokemondb.net/type/ground" class="itype ground">Ground</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n35" data-sprite=" pkgG1 n35 " href="https://pokemondb.net/pokedex/clefairy"></a><br><small>#035</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/clefairy">Clefairy</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n36" data-sprite=" pkgG1 n36 " href="https://pokemondb.net/pokedex/clefable"></a><br><small>#036</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/clefable">Clefable</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n37" data-sprite=" pkgG1 n37 " href="https://pokemondb.net/pokedex/vulpix"></a><br><small>#037</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/vulpix">Vulpix</a><br><small class="aside"><a href="https://pokemondb.net/type/fire" class="itype fire">Fire</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n38" data-sprite=" pkgG1 n38 " href="https://pokemondb.net/pokedex/ninetales"></a><br><small>#038</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/ninetales">Ninetales</a><br><small class="aside"><a href="https://pokemondb.net/type/fire" class="itype fire">Fire</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n39" data-sprite=" pkgG1 n39 " href="https://pokemondb.net/pokedex/jigglypuff"></a><br><small>#039</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/jigglypuff">Jigglypuff</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n40" data-sprite=" pkgG1 n40 " href="https://pokemondb.net/pokedex/wigglytuff"></a><br><small>#040</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/wigglytuff">Wigglytuff</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n41" data-sprite=" pkgG1 n41 " href="https://pokemondb.net/pokedex/zubat"></a><br><small>#041</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/zubat">Zubat</a><br><small class="aside"><a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n42" data-sprite=" pkgG1 n42 " href="https://pokemondb.net/pokedex/golbat"></a><br><small>#042</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/golbat">Golbat</a><br><small class="aside"><a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n43" data-sprite=" pkgG1 n43 " href="https://pokemondb.net/pokedex/oddish"></a><br><small>#043</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/oddish">Oddish</a><br><small class="aside"><a href="https://pokemondb.net/type/grass" class="itype grass">Grass</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n44" data-sprite=" pkgG1 n44 " href="https://pokemondb.net/pokedex/gloom"></a><br><small>#044</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/gloom">Gloom</a><br><small class="aside"><a href="https://pokemondb.net/type/grass" class="itype grass">Grass</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n45" data-sprite=" pkgG1 n45 " href="https://pokemondb.net/pokedex/vileplume"></a><br><small>#045</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/vileplume">Vileplume</a><br><small class="aside"><a href="https://pokemondb.net/type/grass" class="itype grass">Grass</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n46" data-sprite=" pkgG1 n46 " href="https://pokemondb.net/pokedex/paras"></a><br><small>#046</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/paras">Paras</a><br><small class="aside"><a href="https://pokemondb.net/type/bug" class="itype bug">Bug</a> · <a href="https://pokemondb.net/type/grass" class="itype grass">Grass</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n47" data-sprite=" pkgG1 n47 " href="https://pokemondb.net/pokedex/parasect"></a><br><small>#047</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/parasect">Parasect</a><br><small class="aside"><a href="https://pokemondb.net/type/bug" class="itype bug">Bug</a> · <a href="https://pokemondb.net/type/grass" class="itype grass">Grass</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n48" data-sprite=" pkgG1 n48 " href="https://pokemondb.net/pokedex/venonat"></a><br><small>#048</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/venonat">Venonat</a><br><small class="aside"><a href="https://pokemondb.net/type/bug" class="itype bug">Bug</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n49" data-sprite=" pkgG1 n49 " href="https://pokemondb.net/pokedex/venomoth"></a><br><small>#049</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/venomoth">Venomoth</a><br><small class="aside"><a href="https://pokemondb.net/type/bug" class="itype bug">Bug</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n50" data-sprite=" pkgG1 n50 " href="https://pokemondb.net/pokedex/diglett"></a><br><small>#050</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/diglett">Diglett</a><br><small class="aside"><a href="https://pokemondb.net/type/ground" class="itype ground">Ground</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n51" data-sprite=" pkgG1 n51 " href="https://pokemondb.net/pokedex/dugtrio"></a><br><small>#051</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/dugtrio">Dugtrio</a><br><small class="aside"><a href="https://pokemondb.net/type/ground" class="itype ground">Ground</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n52" data-sprite=" pkgG1 n52 " href="https://pokemondb.net/pokedex/meowth"></a><br><small>#052</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/meowth">Meowth</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n53" data-sprite=" pkgG1 n53 " href="https://pokemondb.net/pokedex/persian"></a><br><small>#053</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/persian">Persian</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n54" data-sprite=" pkgG1 n54 " href="https://pokemondb.net/pokedex/psyduck"></a><br><small>#054</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/psyduck">Psyduck</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n55" data-sprite=" pkgG1 n55 " href="https://pokemondb.net/pokedex/golduck"></a><br><small>#055</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/golduck">Golduck</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n56" data-sprite=" pkgG1 n56 " href="https://pokemondb.net/pokedex/mankey"></a><br><small>#056</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/mankey">Mankey</a><br><small class="aside"><a href="https://pokemondb.net/type/fighting" class="itype fighting">Fighting</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n57" data-sprite=" pkgG1 n57 " href="https://pokemondb.net/pokedex/primeape"></a><br><small>#057</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/primeape">Primeape</a><br><small class="aside"><a href="https://pokemondb.net/type/fighting" class="itype fighting">Fighting</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n58" data-sprite=" pkgG1 n58 " href="https://pokemondb.net/pokedex/growlithe"></a><br><small>#058</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/growlithe">Growlithe</a><br><small class="aside"><a href="https://pokemondb.net/type/fire" class="itype fire">Fire</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n59" data-sprite=" pkgG1 n59 " href="https://pokemondb.net/pokedex/arcanine"></a><br><small>#059</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/arcanine">Arcanine</a><br><small class="aside"><a href="https://pokemondb.net/type/fire" class="itype fire">Fire</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n60" data-sprite=" pkgG1 n60 " href="https://pokemondb.net/pokedex/poliwag"></a><br><small>#060</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/poliwag">Poliwag</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n61" data-sprite=" pkgG1 n61 " href="https://pokemondb.net/pokedex/poliwhirl"></a><br><small>#061</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/poliwhirl">Poliwhirl</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n62" data-sprite=" pkgG1 n62 " href="https://pokemondb.net/pokedex/poliwrath"></a><br><small>#062</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/poliwrath">Poliwrath</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a> · <a href="https://pokemondb.net/type/fighting" class="itype fighting">Fighting</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n63" data-sprite=" pkgG1 n63 " href="https://pokemondb.net/pokedex/abra"></a><br><small>#063</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/abra">Abra</a><br><small class="aside"><a href="https://pokemondb.net/type/psychic" class="itype psychic">Psychic</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n64" data-sprite=" pkgG1 n64 " href="https://pokemondb.net/pokedex/kadabra"></a><br><small>#064</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/kadabra">Kadabra</a><br><small class="aside"><a href="https://pokemondb.net/type/psychic" class="itype psychic">Psychic</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n65" data-sprite=" pkgG1 n65 " href="https://pokemondb.net/pokedex/alakazam"></a><br><small>#065</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/alakazam">Alakazam</a><br><small class="aside"><a href="https://pokemondb.net/type/psychic" class="itype psychic">Psychic</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n66" data-sprite=" pkgG1 n66 " href="https://pokemondb.net/pokedex/machop"></a><br><small>#066</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/machop">Machop</a><br><small class="aside"><a href="https://pokemondb.net/type/fighting" class="itype fighting">Fighting</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n67" data-sprite=" pkgG1 n67 " href="https://pokemondb.net/pokedex/machoke"></a><br><small>#067</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/machoke">Machoke</a><br><small class="aside"><a href="https://pokemondb.net/type/fighting" class="itype fighting">Fighting</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n68" data-sprite=" pkgG1 n68 " href="https://pokemondb.net/pokedex/machamp"></a><br><small>#068</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/machamp">Machamp</a><br><small class="aside"><a href="https://pokemondb.net/type/fighting" class="itype fighting">Fighting</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n69" data-sprite=" pkgG1 n69 " href="https://pokemondb.net/pokedex/bellsprout"></a><br><small>#069</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/bellsprout">Bellsprout</a><br><small class="aside"><a href="https://pokemondb.net/type/grass" class="itype grass">Grass</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n70" data-sprite=" pkgG1 n70 " href="https://pokemondb.net/pokedex/weepinbell"></a><br><small>#070</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/weepinbell">Weepinbell</a><br><small class="aside"><a href="https://pokemondb.net/type/grass" class="itype grass">Grass</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n71" data-sprite=" pkgG1 n71 " href="https://pokemondb.net/pokedex/victreebel"></a><br><small>#071</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/victreebel">Victreebel</a><br><small class="aside"><a href="https://pokemondb.net/type/grass" class="itype grass">Grass</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n72" data-sprite=" pkgG1 n72 " href="https://pokemondb.net/pokedex/tentacool"></a><br><small>#072</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/tentacool">Tentacool</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n73" data-sprite=" pkgG1 n73 " href="https://pokemondb.net/pokedex/tentacruel"></a><br><small>#073</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/tentacruel">Tentacruel</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n74" data-sprite=" pkgG1 n74 " href="https://pokemondb.net/pokedex/geodude"></a><br><small>#074</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/geodude">Geodude</a><br><small class="aside"><a href="https://pokemondb.net/type/rock" class="itype rock">Rock</a> · <a href="https://pokemondb.net/type/ground" class="itype ground">Ground</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n75" data-sprite=" pkgG1 n75 " href="https://pokemondb.net/pokedex/graveler"></a><br><small>#075</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/graveler">Graveler</a><br><small class="aside"><a href="https://pokemondb.net/type/rock" class="itype rock">Rock</a> · <a href="https://pokemondb.net/type/ground" class="itype ground">Ground</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n76" data-sprite=" pkgG1 n76 " href="https://pokemondb.net/pokedex/golem"></a><br><small>#076</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/golem">Golem</a><br><small class="aside"><a href="https://pokemondb.net/type/rock" class="itype rock">Rock</a> · <a href="https://pokemondb.net/type/ground" class="itype ground">Ground</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n77" data-sprite=" pkgG1 n77 " href="https://pokemondb.net/pokedex/ponyta"></a><br><small>#077</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/ponyta">Ponyta</a><br><small class="aside"><a href="https://pokemondb.net/type/fire" class="itype fire">Fire</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n78" data-sprite=" pkgG1 n78 " href="https://pokemondb.net/pokedex/rapidash"></a><br><small>#078</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/rapidash">Rapidash</a><br><small class="aside"><a href="https://pokemondb.net/type/fire" class="itype fire">Fire</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n79" data-sprite=" pkgG1 n79 " href="https://pokemondb.net/pokedex/slowpoke"></a><br><small>#079</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/slowpoke">Slowpoke</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a> · <a href="https://pokemondb.net/type/psychic" class="itype psychic">Psychic</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n80" data-sprite=" pkgG1 n80 " href="https://pokemondb.net/pokedex/slowbro"></a><br><small>#080</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/slowbro">Slowbro</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a> · <a href="https://pokemondb.net/type/psychic" class="itype psychic">Psychic</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n81" data-sprite=" pkgG1 n81 " href="https://pokemondb.net/pokedex/magnemite"></a><br><small>#081</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/magnemite">Magnemite</a><br><small class="aside"><a href="https://pokemondb.net/type/electric" class="itype electric">Electric</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n82" data-sprite=" pkgG1 n82 " href="https://pokemondb.net/pokedex/magneton"></a><br><small>#082</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/magneton">Magneton</a><br><small class="aside"><a href="https://pokemondb.net/type/electric" class="itype electric">Electric</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n83" data-sprite=" pkgG1 n83 " href="https://pokemondb.net/pokedex/farfetchd"></a><br><small>#083</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/farfetchd">Farfetch'd</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n84" data-sprite=" pkgG1 n84 " href="https://pokemondb.net/pokedex/doduo"></a><br><small>#084</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/doduo">Doduo</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n85" data-sprite=" pkgG1 n85 " href="https://pokemondb.net/pokedex/dodrio"></a><br><small>#085</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/dodrio">Dodrio</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n86" data-sprite=" pkgG1 n86 " href="https://pokemondb.net/pokedex/seel"></a><br><small>#086</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/seel">Seel</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n87" data-sprite=" pkgG1 n87 " href="https://pokemondb.net/pokedex/dewgong"></a><br><small>#087</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/dewgong">Dewgong</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a> · <a href="https://pokemondb.net/type/ice" class="itype ice">Ice</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n88" data-sprite=" pkgG1 n88 " href="https://pokemondb.net/pokedex/grimer"></a><br><small>#088</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/grimer">Grimer</a><br><small class="aside"><a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n89" data-sprite=" pkgG1 n89 " href="https://pokemondb.net/pokedex/muk"></a><br><small>#089</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/muk">Muk</a><br><small class="aside"><a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n90" data-sprite=" pkgG1 n90 " href="https://pokemondb.net/pokedex/shellder"></a><br><small>#090</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/shellder">Shellder</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n91" data-sprite=" pkgG1 n91 " href="https://pokemondb.net/pokedex/cloyster"></a><br><small>#091</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/cloyster">Cloyster</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a> · <a href="https://pokemondb.net/type/ice" class="itype ice">Ice</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n92" data-sprite=" pkgG1 n92 " href="https://pokemondb.net/pokedex/gastly"></a><br><small>#092</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/gastly">Gastly</a><br><small class="aside"><a href="https://pokemondb.net/type/ghost" class="itype ghost">Ghost</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n93" data-sprite=" pkgG1 n93 " href="https://pokemondb.net/pokedex/haunter"></a><br><small>#093</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/haunter">Haunter</a><br><small class="aside"><a href="https://pokemondb.net/type/ghost" class="itype ghost">Ghost</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n94" data-sprite=" pkgG1 n94 " href="https://pokemondb.net/pokedex/gengar"></a><br><small>#094</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/gengar">Gengar</a><br><small class="aside"><a href="https://pokemondb.net/type/ghost" class="itype ghost">Ghost</a> · <a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n95" data-sprite=" pkgG1 n95 " href="https://pokemondb.net/pokedex/onix"></a><br><small>#095</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/onix">Onix</a><br><small class="aside"><a href="https://pokemondb.net/type/rock" class="itype rock">Rock</a> · <a href="https://pokemondb.net/type/ground" class="itype ground">Ground</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n96" data-sprite=" pkgG1 n96 " href="https://pokemondb.net/pokedex/drowzee"></a><br><small>#096</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/drowzee">Drowzee</a><br><small class="aside"><a href="https://pokemondb.net/type/psychic" class="itype psychic">Psychic</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n97" data-sprite=" pkgG1 n97 " href="https://pokemondb.net/pokedex/hypno"></a><br><small>#097</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/hypno">Hypno</a><br><small class="aside"><a href="https://pokemondb.net/type/psychic" class="itype psychic">Psychic</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n98" data-sprite=" pkgG1 n98 " href="https://pokemondb.net/pokedex/krabby"></a><br><small>#098</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/krabby">Krabby</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n99" data-sprite=" pkgG1 n99 " href="https://pokemondb.net/pokedex/kingler"></a><br><small>#099</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/kingler">Kingler</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n100" data-sprite=" pkgG1 n100 " href="https://pokemondb.net/pokedex/voltorb"></a><br><small>#100</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/voltorb">Voltorb</a><br><small class="aside"><a href="https://pokemondb.net/type/electric" class="itype electric">Electric</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n101" data-sprite=" pkgG1 n101 " href="https://pokemondb.net/pokedex/electrode"></a><br><small>#101</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/electrode">Electrode</a><br><small class="aside"><a href="https://pokemondb.net/type/electric" class="itype electric">Electric</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n102" data-sprite=" pkgG1 n102 " href="https://pokemondb.net/pokedex/exeggcute"></a><br><small>#102</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/exeggcute">Exeggcute</a><br><small class="aside"><a href="https://pokemondb.net/type/grass" class="itype grass">Grass</a> · <a href="https://pokemondb.net/type/psychic" class="itype psychic">Psychic</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n103" data-sprite=" pkgG1 n103 " href="https://pokemondb.net/pokedex/exeggutor"></a><br><small>#103</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/exeggutor">Exeggutor</a><br><small class="aside"><a href="https://pokemondb.net/type/grass" class="itype grass">Grass</a> · <a href="https://pokemondb.net/type/psychic" class="itype psychic">Psychic</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n104" data-sprite=" pkgG1 n104 " href="https://pokemondb.net/pokedex/cubone"></a><br><small>#104</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/cubone">Cubone</a><br><small class="aside"><a href="https://pokemondb.net/type/ground" class="itype ground">Ground</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n105" data-sprite=" pkgG1 n105 " href="https://pokemondb.net/pokedex/marowak"></a><br><small>#105</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/marowak">Marowak</a><br><small class="aside"><a href="https://pokemondb.net/type/ground" class="itype ground">Ground</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n106" data-sprite=" pkgG1 n106 " href="https://pokemondb.net/pokedex/hitmonlee"></a><br><small>#106</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/hitmonlee">Hitmonlee</a><br><small class="aside"><a href="https://pokemondb.net/type/fighting" class="itype fighting">Fighting</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n107" data-sprite=" pkgG1 n107 " href="https://pokemondb.net/pokedex/hitmonchan"></a><br><small>#107</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/hitmonchan">Hitmonchan</a><br><small class="aside"><a href="https://pokemondb.net/type/fighting" class="itype fighting">Fighting</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n108" data-sprite=" pkgG1 n108 " href="https://pokemondb.net/pokedex/lickitung"></a><br><small>#108</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/lickitung">Lickitung</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n109" data-sprite=" pkgG1 n109 " href="https://pokemondb.net/pokedex/koffing"></a><br><small>#109</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/koffing">Koffing</a><br><small class="aside"><a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n110" data-sprite=" pkgG1 n110 " href="https://pokemondb.net/pokedex/weezing"></a><br><small>#110</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/weezing">Weezing</a><br><small class="aside"><a href="https://pokemondb.net/type/poison" class="itype poison">Poison</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n111" data-sprite=" pkgG1 n111 " href="https://pokemondb.net/pokedex/rhyhorn"></a><br><small>#111</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/rhyhorn">Rhyhorn</a><br><small class="aside"><a href="https://pokemondb.net/type/ground" class="itype ground">Ground</a> · <a href="https://pokemondb.net/type/rock" class="itype rock">Rock</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n112" data-sprite=" pkgG1 n112 " href="https://pokemondb.net/pokedex/rhydon"></a><br><small>#112</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/rhydon">Rhydon</a><br><small class="aside"><a href="https://pokemondb.net/type/ground" class="itype ground">Ground</a> · <a href="https://pokemondb.net/type/rock" class="itype rock">Rock</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n113" data-sprite=" pkgG1 n113 " href="https://pokemondb.net/pokedex/chansey"></a><br><small>#113</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/chansey">Chansey</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n114" data-sprite=" pkgG1 n114 " href="https://pokemondb.net/pokedex/tangela"></a><br><small>#114</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/tangela">Tangela</a><br><small class="aside"><a href="https://pokemondb.net/type/grass" class="itype grass">Grass</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n115" data-sprite=" pkgG1 n115 " href="https://pokemondb.net/pokedex/kangaskhan"></a><br><small>#115</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/kangaskhan">Kangaskhan</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n116" data-sprite=" pkgG1 n116 " href="https://pokemondb.net/pokedex/horsea"></a><br><small>#116</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/horsea">Horsea</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n117" data-sprite=" pkgG1 n117 " href="https://pokemondb.net/pokedex/seadra"></a><br><small>#117</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/seadra">Seadra</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n118" data-sprite=" pkgG1 n118 " href="https://pokemondb.net/pokedex/goldeen"></a><br><small>#118</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/goldeen">Goldeen</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n119" data-sprite=" pkgG1 n119 " href="https://pokemondb.net/pokedex/seaking"></a><br><small>#119</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/seaking">Seaking</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n120" data-sprite=" pkgG1 n120 " href="https://pokemondb.net/pokedex/staryu"></a><br><small>#120</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/staryu">Staryu</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n121" data-sprite=" pkgG1 n121 " href="https://pokemondb.net/pokedex/starmie"></a><br><small>#121</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/starmie">Starmie</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a> · <a href="https://pokemondb.net/type/psychic" class="itype psychic">Psychic</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n122" data-sprite=" pkgG1 n122 " href="https://pokemondb.net/pokedex/mr-mime"></a><br><small>#122</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/mr-mime">Mr. Mime</a><br><small class="aside"><a href="https://pokemondb.net/type/psychic" class="itype psychic">Psychic</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n123" data-sprite=" pkgG1 n123 " href="https://pokemondb.net/pokedex/scyther"></a><br><small>#123</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/scyther">Scyther</a><br><small class="aside"><a href="https://pokemondb.net/type/bug" class="itype bug">Bug</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n124" data-sprite=" pkgG1 n124 " href="https://pokemondb.net/pokedex/jynx"></a><br><small>#124</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/jynx">Jynx</a><br><small class="aside"><a href="https://pokemondb.net/type/ice" class="itype ice">Ice</a> · <a href="https://pokemondb.net/type/psychic" class="itype psychic">Psychic</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n125" data-sprite=" pkgG1 n125 " href="https://pokemondb.net/pokedex/electabuzz"></a><br><small>#125</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/electabuzz">Electabuzz</a><br><small class="aside"><a href="https://pokemondb.net/type/electric" class="itype electric">Electric</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n126" data-sprite=" pkgG1 n126 " href="https://pokemondb.net/pokedex/magmar"></a><br><small>#126</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/magmar">Magmar</a><br><small class="aside"><a href="https://pokemondb.net/type/fire" class="itype fire">Fire</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n127" data-sprite=" pkgG1 n127 " href="https://pokemondb.net/pokedex/pinsir"></a><br><small>#127</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/pinsir">Pinsir</a><br><small class="aside"><a href="https://pokemondb.net/type/bug" class="itype bug">Bug</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n128" data-sprite=" pkgG1 n128 " href="https://pokemondb.net/pokedex/tauros"></a><br><small>#128</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/tauros">Tauros</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n129" data-sprite=" pkgG1 n129 " href="https://pokemondb.net/pokedex/magikarp"></a><br><small>#129</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/magikarp">Magikarp</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n130" data-sprite=" pkgG1 n130 " href="https://pokemondb.net/pokedex/gyarados"></a><br><small>#130</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/gyarados">Gyarados</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n131" data-sprite=" pkgG1 n131 " href="https://pokemondb.net/pokedex/lapras"></a><br><small>#131</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/lapras">Lapras</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a> · <a href="https://pokemondb.net/type/ice" class="itype ice">Ice</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n132" data-sprite=" pkgG1 n132 " href="https://pokemondb.net/pokedex/ditto"></a><br><small>#132</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/ditto">Ditto</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n133" data-sprite=" pkgG1 n133 " href="https://pokemondb.net/pokedex/eevee"></a><br><small>#133</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/eevee">Eevee</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n134" data-sprite=" pkgG1 n134 " href="https://pokemondb.net/pokedex/vaporeon"></a><br><small>#134</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/vaporeon">Vaporeon</a><br><small class="aside"><a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n135" data-sprite=" pkgG1 n135 " href="https://pokemondb.net/pokedex/jolteon"></a><br><small>#135</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/jolteon">Jolteon</a><br><small class="aside"><a href="https://pokemondb.net/type/electric" class="itype electric">Electric</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n136" data-sprite=" pkgG1 n136 " href="https://pokemondb.net/pokedex/flareon"></a><br><small>#136</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/flareon">Flareon</a><br><small class="aside"><a href="https://pokemondb.net/type/fire" class="itype fire">Fire</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n137" data-sprite=" pkgG1 n137 " href="https://pokemondb.net/pokedex/porygon"></a><br><small>#137</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/porygon">Porygon</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n138" data-sprite=" pkgG1 n138 " href="https://pokemondb.net/pokedex/omanyte"></a><br><small>#138</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/omanyte">Omanyte</a><br><small class="aside"><a href="https://pokemondb.net/type/rock" class="itype rock">Rock</a> · <a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n139" data-sprite=" pkgG1 n139 " href="https://pokemondb.net/pokedex/omastar"></a><br><small>#139</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/omastar">Omastar</a><br><small class="aside"><a href="https://pokemondb.net/type/rock" class="itype rock">Rock</a> · <a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n140" data-sprite=" pkgG1 n140 " href="https://pokemondb.net/pokedex/kabuto"></a><br><small>#140</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/kabuto">Kabuto</a><br><small class="aside"><a href="https://pokemondb.net/type/rock" class="itype rock">Rock</a> · <a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n141" data-sprite=" pkgG1 n141 " href="https://pokemondb.net/pokedex/kabutops"></a><br><small>#141</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/kabutops">Kabutops</a><br><small class="aside"><a href="https://pokemondb.net/type/rock" class="itype rock">Rock</a> · <a href="https://pokemondb.net/type/water" class="itype water">Water</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n142" data-sprite=" pkgG1 n142 " href="https://pokemondb.net/pokedex/aerodactyl"></a><br><small>#142</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/aerodactyl">Aerodactyl</a><br><small class="aside"><a href="https://pokemondb.net/type/rock" class="itype rock">Rock</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n143" data-sprite=" pkgG1 n143 " href="https://pokemondb.net/pokedex/snorlax"></a><br><small>#143</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/snorlax">Snorlax</a><br><small class="aside"><a href="https://pokemondb.net/type/normal" class="itype normal">Normal</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n144" data-sprite=" pkgG1 n144 " href="https://pokemondb.net/pokedex/articuno"></a><br><small>#144</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/articuno">Articuno</a><br><small class="aside"><a href="https://pokemondb.net/type/ice" class="itype ice">Ice</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n145" data-sprite=" pkgG1 n145 " href="https://pokemondb.net/pokedex/zapdos"></a><br><small>#145</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/zapdos">Zapdos</a><br><small class="aside"><a href="https://pokemondb.net/type/electric" class="itype electric">Electric</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n146" data-sprite=" pkgG1 n146 " href="https://pokemondb.net/pokedex/moltres"></a><br><small>#146</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/moltres">Moltres</a><br><small class="aside"><a href="https://pokemondb.net/type/fire" class="itype fire">Fire</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n147" data-sprite=" pkgG1 n147 " href="https://pokemondb.net/pokedex/dratini"></a><br><small>#147</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/dratini">Dratini</a><br><small class="aside"><a href="https://pokemondb.net/type/dragon" class="itype dragon">Dragon</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n148" data-sprite=" pkgG1 n148 " href="https://pokemondb.net/pokedex/dragonair"></a><br><small>#148</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/dragonair">Dragonair</a><br><small class="aside"><a href="https://pokemondb.net/type/dragon" class="itype dragon">Dragon</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n149" data-sprite=" pkgG1 n149 " href="https://pokemondb.net/pokedex/dragonite"></a><br><small>#149</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/dragonite">Dragonite</a><br><small class="aside"><a href="https://pokemondb.net/type/dragon" class="itype dragon">Dragon</a> · <a href="https://pokemondb.net/type/flying" class="itype flying">Flying</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n150" data-sprite=" pkgG1 n150 " href="https://pokemondb.net/pokedex/mewtwo"></a><br><small>#150</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/mewtwo">Mewtwo</a><br><small class="aside"><a href="https://pokemondb.net/type/psychic" class="itype psychic">Psychic</a></small></span>
+<span class="infocard-tall game-red-blue"><a class="pkg  pkgG1 n151" data-sprite=" pkgG1 n151 " href="https://pokemondb.net/pokedex/mew"></a><br><small>#151</small><br><a class="ent-name" href="https://pokemondb.net/pokedex/mew">Mew</a><br><small class="aside"><a href="https://pokemondb.net/type/psychic" class="itype psychic">Psychic</a></small></span>
+</div>
+<div class="ad-responsive">
+<style>
+  .adresp-footer { width: 320px; height: 50px; margin-left: -5px; }
+  @media(min-width: 795px) { .adresp-footer { width: 728px; height: 90px; } }
+</style>
+<ins class="adsbygoogle adresp-footer" style="display: inline-block; width: 728px; height: 0px;" data-ad-client="ca-pub-4942990752504243" data-ad-slot="9080564600" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display: inline-table; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 728px; background-color: transparent;"><ins id="aswift_1_anchor" style="display: block; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 728px; background-color: transparent; overflow: hidden; opacity: 0;"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:728px;height:90px;" src="./red_blue_pokedex database_files/saved_resource(1).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</article>
+<footer class="grid-wrapper">
+<span class="footer-links"><a href="https://pokemondb.net/about#privacy">Privacy Policy</a></span>
+<span class="footer-copyright">
+All content &amp; design © Pokémon Database, 2008-2018.
+Pokémon images &amp; names © 1995-2018 Nintendo/Game Freak.
+</span>
+</footer>
+<script src="./red_blue_pokedex database_files/jquery-2.2.4.min.js"></script>
+<script>window.jQuery || document.write('<script src="/static/js/dev/jquery-2.2.4.min.js"><\/script>');
+var localDbVersions = 19;</script>
+<script src="./red_blue_pokedex database_files/global-e4d1eefa4d.js"></script>
+<script>
+setTimeout(function() {
+if ($(atob('aGVhZGVyLmdyaWQtd3JhcHBlcg==')).length == 0 && $(atob('bmF2Lm1haW4tbWVudQ==')).length == 0) {
+$('body').html(atob('PGRpdiBzdHlsZT0icG9zaXRpb246YWJzb2x1dGU7IHRvcDowOyBsZWZ0OjA7IHJpZ2h0OjA7IGJvdHRvbTowOyBiYWNrZ3JvdW5kOiMwMDA7IHBhZGRpbmc6MTBweDsgY29sb3I6I2ZmMDsgZm9udC1zaXplOjEuNGVtIj48YiBzdHlsZT0iZm9udC1zaXplOjEuNmVtIj5USElTIEFQUCBJUyBBIFNDQU0hPC9iPjxicj48YnI+VGhleSBhcmUgbG9hZGluZyBvdXIgd2Vic2l0ZSBwb2tlbW9uZGIubmV0IHdpdGhvdXQgb3VyIHBlcm1pc3Npb24uIFlvdSBzaG91bGQgZGVsZXRlIHRoaXMgYXBwIGltbWVkaWF0ZWx5IGFuZCBvcGVuIHBva2Vtb25kYi5uZXQgaW4geW91ciB3ZWIgYnJvd3NlciBpbnN0ZWFkLiBUaGFuayB5b3UuPC9kaXY+'));
+}
+}, 2000);
+</script>
+
+
+</body></html>
