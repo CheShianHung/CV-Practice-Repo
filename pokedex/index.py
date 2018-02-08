@@ -1,3 +1,5 @@
+# run python index.py -s ./images -i ./pokemonIndex to store the index from the pokemon images to a file
+
 import zernikeDescriptor
 import numpy as np
 import argparse

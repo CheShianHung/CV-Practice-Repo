@@ -1,3 +1,5 @@
+# use command python find_screen.py -q ./gameboy-query.jpg to crop the pokemon from the gameboy screen
+
 import imutils
 from skimage import exposure
 import numpy as np

@@ -1,3 +1,5 @@
+# run python getPokeSprites.py -p ./red_blue_pokedex_database.html -s ./images to download the images
+
 from bs4 import BeautifulSoup
 import argparse
 import requests
